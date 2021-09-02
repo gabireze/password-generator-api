@@ -2,25 +2,30 @@
   "name": "random-password-generator-back-end",
   "version": "1.0.0",
   "description": "random-password-generator-back-end",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node app.js",
     "build": "npm i update",
-    "local": "nodemon index.js",
-    "debug": "nodemon --inspect index.js",
+    "local": "nodemon app.js",
+    "deploy": "serverless deploy",
+    "debug": "nodemon --inspect app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "connection": "node ./infrastructure/connection.js"
   },
-  "author": "Gabriel de Rezende Gonçalves",
+  "author": "Gabriel de Rezende Gonçalves <contato@gabireze.com.br> (https://github.com/gabireze)",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabireze/random-password-generator-back-end.git"
+  },
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "generate-password": "^1.6.1",
-    "update": "^0.7.4",
-    "upgrade": "^1.1.0"
+    "serverless-http": "^2.7.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "serverless-dotenv-plugin": "^3.9.0"
   }
 }
