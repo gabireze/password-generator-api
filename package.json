@@ -1,0 +1,26 @@
+{
+  "name": "random-password-generator-back-end",
+  "version": "1.0.0",
+  "description": "random-password-generator-back-end",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "npm i update",
+    "local": "nodemon index.js",
+    "debug": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "connection": "node ./infrastructure/connection.js"
+  },
+  "author": "Gabriel de Rezende Gonçalves",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "generate-password": "^1.6.1",
+    "update": "^0.7.4",
+    "upgrade": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
