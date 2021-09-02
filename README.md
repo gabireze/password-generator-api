@@ -1,5 +1,42 @@
 login-back-end
 
+#Usage
+```
+##generate([options])
+```
+Generate one password with the given options. Returns a string.
+
+```
+var generator = require('generate-password');
+
+var password = generator.generate({
+	length: 10,
+	numbers: true
+});
+
+// 'uEyMTw32v9'
+console.log(password);
+```
+
+```
+##generateMultiple(amount[, options])
+```
+Bulk generate multiple passwords at once, with the same options for all. Returns an array.
+
+```
+var generator = require('generate-password');
+
+var passwords = generator.generateMultiple(3, {
+	length: 10,
+	uppercase: false
+});
+
+// [ 'hnwulsekqn', 'qlioullgew', 'kosxwabgjv' ]
+console.log(passwords);
+```
+##Available options
+Any of these can be passed into the options object for each function.
+
 | Name                     | Description                                                          | Default Value |
 |--------------------------|----------------------------------------------------------------------|---------------|
 | length                   | Integer, length of password.                                         | 10            |
@@ -10,3 +47,4 @@ login-back-end
 | excludeSimilarCharacters | Boolean, exclude similar chars, like 'i' and 'l'.                    | false         |
 | exclude                  | String, characters to be excluded from password.                     | ''            |
 | strict                   | Boolean, password must include at least one character from each pool | false         |
+*At least one should be true.
