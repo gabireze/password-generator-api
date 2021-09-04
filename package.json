@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "build": "npm i update",
+    "build": "npm i && npm update",
     "local": "nodemon app.js",
     "deploy": "serverless deploy",
     "debug": "nodemon --inspect app.js",
