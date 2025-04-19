@@ -114,4 +114,15 @@ export class GeneratePasswordDto {
   @Transform(({ value }) => value === 'true' || value === true)
   @IsBoolean({ message: 'Quoted must be true or false.' })
   quoted?: boolean;
+
+  // ✅ Required reCAPTCHA field
+
+  @ApiProperty({
+    type: String,
+    example: '03AFcWeA5vmz0e...',
+    description: 'reCAPTCHA token received from the frontend client.',
+    writeOnly: true,
+  })
+  @IsString({ message: 'recaptchaToken must be a string.' })
+  recaptchaToken: string;
 }

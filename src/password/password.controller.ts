@@ -1,6 +1,5 @@
 import { Body, Controller, Post, Res } from '@nestjs/common';
-import { ApiBody, ApiTags } from '@nestjs/swagger';
-import { ApiOkResponse } from '@nestjs/swagger';
+import { ApiBody, ApiTags, ApiOkResponse } from '@nestjs/swagger';
 import { Response } from 'express';
 import { dump as yamlDump } from 'js-yaml';
 import { create } from 'xmlbuilder2';
@@ -28,6 +27,7 @@ export class PasswordController {
           symbols: true,
           quantity: 3,
           format: 'json',
+          recaptchaToken: '03AFcWeA5vmz0e...',
         },
       },
       text: {
@@ -41,6 +41,7 @@ export class PasswordController {
           format: 'text',
           separator: '\n',
           quoted: true,
+          recaptchaToken: '03AFcWeA5vmz0e...',
         },
       },
       xml: {
@@ -52,6 +53,7 @@ export class PasswordController {
           numbers: true,
           symbols: false,
           format: 'xml',
+          recaptchaToken: '03AFcWeA5vmz0e...',
         },
       },
       yaml: {
@@ -63,6 +65,7 @@ export class PasswordController {
           numbers: true,
           symbols: false,
           format: 'yaml',
+          recaptchaToken: '03AFcWeA5vmz0e...',
         },
       },
       csv: {
@@ -76,6 +79,7 @@ export class PasswordController {
           format: 'csv',
           separator: ', ',
           quoted: true,
+          recaptchaToken: '03AFcWeA5vmz0e...',
         },
       },
       html: {
@@ -87,6 +91,7 @@ export class PasswordController {
           numbers: false,
           symbols: false,
           format: 'html',
+          recaptchaToken: '03AFcWeA5vmz0e...',
         },
       },
     },
