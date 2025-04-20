@@ -66,3 +66,6 @@ swagger.json
 
 # Codecov (optional)
 .codecov/
+
+# Serverless directories (optional)
+.serverless/

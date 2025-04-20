@@ -17,7 +17,6 @@ async function bootstrap() {
     }),
   );
 
-  // 🔹 Swagger configuration
   const config = new DocumentBuilder()
     .setTitle('Password Generator API')
     .setDescription(
