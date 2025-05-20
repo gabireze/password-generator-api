@@ -9,7 +9,9 @@ provider:
   memorySize: 256
   timeout: 10
   environment:
-    RECAPTCHA_SECRET_KEY: ${env:RECAPTCHA_SECRET_KEY}
+    RECAPTCHA_SITE_KEY: ${env:RECAPTCHA_SITE_KEY}
+    RECAPTCHA_API_KEY: ${env:RECAPTCHA_API_KEY}
+    RECAPTCHA_PROJECT_ID: ${env:RECAPTCHA_PROJECT_ID}
   httpApi:
     cors:
       allowedOrigins:
