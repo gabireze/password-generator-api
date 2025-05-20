@@ -4,7 +4,7 @@
   "description": "API NestJS for generating secure random passwords with multiple formats (JSON, XML, YAML, etc.)",
   "author": "Gabriel de Rezende Gonçalves",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "nest build",
     "start": "nest start",
