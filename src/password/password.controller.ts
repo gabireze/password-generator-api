@@ -8,7 +8,7 @@ import { GeneratePasswordDto } from './dto/generate-password.dto';
 import { PasswordService } from './password.service';
 
 @ApiTags('Passwords')
-@Controller('password')
+@Controller()
 export class PasswordController {
   constructor(private readonly passwordService: PasswordService) {}
 
