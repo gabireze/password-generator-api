@@ -19,8 +19,7 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "export:swagger": "ts-node src/swagger.ts",
-    "deploy": "serverless deploy"
+    "export:swagger": "ts-node src/swagger.ts"
   },
   "dependencies": {
     "@nestjs/axios": "^4.0.0",
@@ -30,8 +29,6 @@
     "@nestjs/platform-express": "^11.0.1",
     "@nestjs/swagger": "^11.1.4",
     "@nestjs/throttler": "^6.4.0",
-    "@vendia/serverless-express": "^4.12.6",
-    "aws-lambda": "^1.0.7",
     "axios": "^1.8.4",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.1",

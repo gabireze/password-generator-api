@@ -67,5 +67,9 @@ swagger.json
 # Codecov (optional)
 .codecov/
 
-# Serverless directories (optional)
-.serverless/
+# Deployment
+deploy.tar.gz
+*.tar.gz
+
+# PM2
+.pm2/
