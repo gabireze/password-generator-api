@@ -4,6 +4,9 @@
 
 A secure and flexible password generation API built with [NestJS](https://nestjs.com/). Supports multiple formats including JSON, text, XML, CSV, YAML, and HTML.
 
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=gabireze/password-generator-api@github)](https://gitads.dev/v1/ad-track?source=gabireze/password-generator-api@github)
+
 ## 🚀 Features
 
 - Generate multiple random passwords with custom rules
