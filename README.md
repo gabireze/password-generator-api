@@ -98,3 +98,5 @@ src/
   ├── swagger.ts           # Swagger export
   └── main.ts              # Entry point
 ```
+
+<!-- GitAds-Verify: SR6LSW2ZG8BDVFYHQ1PJJ54GHH1DTAGZ -->
